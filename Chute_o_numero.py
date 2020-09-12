@@ -12,10 +12,10 @@ class ChuteONumero:
     def Iniciar(self):
         self.GerarNumeroAleatorio()
         self.PedirValorAleatorio()
-        if int(valor_do_chute) > self.valor_aleatorio:
+        if int(self.valor_do_chute) > self.valor_aleatorio:
             print('Chute um valor mais baixo!')
             self.PedirValorAleatorio()
-        elif int(valor_do_chute) < self.valor_aleatorio:
+        elif int(self.valor_do_chute) < self.valor_aleatorio:
             print('Chute um valor mais alto!')
             self.PedirValorAleatorio()
 
