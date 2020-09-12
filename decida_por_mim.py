@@ -23,7 +23,8 @@ class DecidaPorMim:
             #fazer algo com os valores
             if self.eventos == 'Decida por mim':
                 print(random.choice(self.respostas))
-                
+            elif self.evento == sg.WIN_CLOSED:
+                    break    
 
 decida = DecidaPorMim()
 decida.Iniciar()
